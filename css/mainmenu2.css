@@ -1,0 +1,90 @@
+body {
+    background-color: #eee;
+    text-align: center;
+    
+}
+
+.nav {
+    display: block;
+    font: 10px Helvetica, Tahoma, serif;
+    margin: 0; 
+    padding: 0;
+
+}
+
+.nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+.nav .button-dropdown {
+    position: relative;
+}
+
+.nav li a {
+    display: block;
+    color: #333;
+    background-color: #fff;
+    padding: 0px 5px;
+    text-decoration: none;
+}
+
+.nav li a span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 10px;
+    color: #999;
+}
+
+.nav li a:hover, .nav li a.dropdown-toggle.active {
+    background-color: #289dcc;
+    color: #fff;
+}
+
+.nav li a:hover span, .nav li a.dropdown-toggle.active span {
+    color: #fff;
+}
+
+.nav li .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: -52;
+    margin-top: 3px;
+    text-align: left;
+    z-index: 3;
+}
+/*responsive*/
+@media screen and (max-width: 1250px){
+    .nav li .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-top: 3px;
+    text-align: left;
+z-index: 3;
+    }
+}
+
+.nav li .dropdown-menu.active {
+    display: block;
+    z-index: 3;
+}
+
+.nav li .dropdown-menu a {
+    width: 100%;
+    z-index: 3;
+    height: 30px;
+    line-height: 30px;
+margin:0;
+}
+
+.papa{
+   
+    height: 200px;
+    overflow: scroll;
+}

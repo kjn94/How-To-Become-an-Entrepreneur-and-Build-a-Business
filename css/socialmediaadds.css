@@ -1,0 +1,43 @@
+
+.grid {
+	padding: 1em 1em 0 2em;
+	margin: 1;
+	column-count: 4;
+	column-gap: 1em;
+	column-rule: 2px outset rgba(0, 0, 0, 0.3);
+}
+
+.module {	
+	margin: 0px 0 0em 0;
+	padding: 20px;
+	box-shadow: 0 8px 6px -6px rgba(0, 0, 128, 0.3), 0px -8px 6px -6px rgba(0, 0, 128, 0.2);
+}
+.module img{
+		width: 100px;
+	height: 100px;
+}
+
+a {
+	text-decoration: none;
+	color: yellow;
+}
+
+
+
+@media screen and (max-width: 1190px) {
+	.grid {
+		column-count: 3;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.grid {
+		column-count: 2;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.grid {
+		column-count: 1;
+	}
+}

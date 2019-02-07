@@ -1,0 +1,96 @@
+
+/*-------------------------Register/Login/Logout-----------------*/
+.nav-register{
+	width:100%;
+	background-color: green;
+	/*background: url('../images/entrepreneurship.png') no-repeat center;*/
+	height:auto;
+
+	font-size: 17px;
+	color: #fff;
+	text-align: center;
+
+	margin: 0 auto;
+	border: 5px solid #285189;
+}
+.nav-register .haha{
+		margin: 0 auto;
+		font-weight: normal;
+		margin-top: 65px;
+}
+
+/*responsive*/
+@media screen and (max-width: 1250px){
+.nav-register .haha{
+margin-top: 0px;
+}
+	 .nav-register {
+	width:100%;
+	background-color: green;
+		margin: -5 auto;
+	/*background: url('../images/entrepreneurship.png') no-repeat center;*/
+	height:auto;
+	}
+}
+/*responsive button*/
+@media screen and (max-width: 550px){
+	 .nav-register {
+	width:100%;
+	background-color: green;
+		margin: -5 auto;
+	/*background: url('../images/entrepreneurship.png') no-repeat center;*/
+	height:auto;
+
+}
+	 .nav-register .haha{
+	margin-top:0px;
+	}
+}
+
+img{
+	width:715px;
+	max-width: 100%;
+	height:auto;
+}
+
+#wrapper{
+	width: 800px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.cat_links{
+	display: block;
+	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #000000;
+	margin-bottom: 5px;
+	background-color: #cccccc;
+	color: #000000;
+}
+
+.cat_links:hover{
+	background-color: #dddddd;
+}
+
+.nav-blog{
+	width:100%;
+	background: url('../../../images/backbelowmenu.png') no-repeat center;
+	height:auto;
+	
+	font-family: Arial-Regular;
+	font-size: 35px;
+	color: yellow;
+	vertical-align: text-bottom;
+	text-align: center;
+	margin: 0 auto;
+	border: 5px solid #285189;
+}
+
+.nav-blog h1{
+    margin-top: 35px;
+}
+

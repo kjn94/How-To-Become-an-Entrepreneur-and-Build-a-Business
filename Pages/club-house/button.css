@@ -1,0 +1,93 @@
+ /*-------------------------NEW BUTTONS-----------------*/    
+ .buttoncart {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 132px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: regular;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.buttoncart2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.buttoncart2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+/*responsive button*/
+@media screen and (max-width: 750px){
+   .buttoncart {
+    background-color: green; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 82px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: regular;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+}
+
+/*Button Two*/
+.button-two {
+  border-radius: 4px;
+  background-color:#d35400;
+  border: none;
+  margin-top: -15px;
+  padding: 15px;
+  width: 165px;
+  transition: all 0.5s;
+}
+/*responsive*/
+@media screen and (max-width: 450px){
+.button-two {
+
+  margin-top: -15px;
+  padding: 15px;
+  width: 145px;
+  }
+}
+
+
+.button-two span {
+  cursor: pointer;
+  color: white;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-two span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-two:hover span {
+  padding-right: 20px;
+}
+
+.button-two:hover span:after {
+  opacity: 1;
+  right: 0;
+}

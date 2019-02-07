@@ -1,0 +1,62 @@
+
+
+
+
+.container {
+  padding: 10px;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.box-content {
+  padding: 20px;
+}
+
+.box-cell {
+  margin-bottom: 10px;
+  
+  &.one {
+    background-color: #F26E11
+  }
+
+  &.two {
+    background-color: #84B2A1;
+  }
+
+  &.three {
+    background-color: #F9EDC7;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .boxes {
+    display: table;
+    width: 100%;
+  }
+
+  .box-row {
+    display: table-row;
+  }
+
+  .box-cell {
+    display: table-cell;
+    vertical-align: top;
+    width: 17.333333333%;
+
+    &.one {
+      border-right: 5px solid #fff;
+    }
+
+    &.two {
+      border-left: 5px solid #fff;
+      border-right: 5px solid #fff;
+    }
+
+    &.three {
+      border-left: 5px solid #fff;
+    }
+  }
+}

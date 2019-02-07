@@ -1,0 +1,353 @@
+body, html{
+	margin:0;
+	font: 1em "Open Sans", sanss-serif;
+}
+
+hr { 
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 5px;
+}
+
+.content{
+	padding:30px;
+}
+/*-------NEW MENU-------*/
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+ul.a {
+     list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+li.a{
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+li a.a{
+  display: block;
+  min-width: 40px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background-color: #4c66ff;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+li{
+  display: inline-block;
+  float: left;
+  margin-right: -30px;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+/*style for menu links*/
+li a{
+  display: block;
+  min-width: 140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background-color: #2f3036;
+  font-size: 23px;
+  text-decoration: none;
+}
+li.footer{
+  display: inline-block;
+  float: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+li a.footer{
+  display: block;
+  min-width: 140px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+
+  color: #fff;
+  background-color: #2f3036;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+
+/*hover for top level links*/
+li:hover a{
+  background-color: #19c589;
+}
+
+/*hide checkbox*/
+input[type=checkbox]{
+  display: none;
+}
+
+/*show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+  display: block;
+}
+
+.show-menu{
+  text-decoration: none;
+  color: #fff;
+  background-color: #19c589;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+
+/*responsive*/
+@media screen and (max-width: 1250px){
+  /*make d*/
+  ul{
+    position: static;
+    display: none;
+  }
+  li{
+    margin-bottom: 1px;
+    margin-right: 0px;
+  	margin-left: 0px;
+  }
+  ul li, li a{
+    width: 100%;
+  }
+  .show-menu{
+    display: block;
+  }
+}
+
+
+/*----OLD MENU----------*/
+nav ul{
+	width:100%;
+	height: 70px;
+	background-color: yellow;
+		border: 5px solid #285189;
+		background-color: blue;
+}
+nav ul .logoNew{
+	margin:5px;
+	float:left;
+	width:170px;
+	height:50px;
+	background: url('../SecretAcademySmall.png') no-repeat center;
+}
+
+.ig{
+	margin:5px;
+	display: inline-block;
+	width:40px;
+	height:40px;
+	background: url('../igdone.png') no-repeat center;
+}
+nav ul .ig:hover{
+	background-color:#0e4bef;
+}
+nav ul .facebook{
+	margin:5px;
+	display: inline-block;
+	width:40px;
+	height:40px;
+	background: url('../face.png') no-repeat center;
+}
+nav ul .facebook:hover{
+	background-color:#0e4bef;
+}
+nav ul .youtube{
+	margin:5px;
+	display: inline-block;
+	width:40px;
+	height:40px;
+	background: url('../youtubedone.png') no-repeat center;
+}
+nav ul .youtube:hover{
+	background-color:#0e4bef;
+}
+nav ul .twitter{
+	margin:5px;
+	display: inline-block;
+	width:40px;
+	height:40px;
+	background: url('../twitterdone.png') no-repeat center;
+}
+nav ul .twitter:hover{
+	background-color:#0e4bef;
+}
+
+
+/*-------------------------PREVIEW-----------------*/
+.nav-preview{
+	width:100%;
+	background-color: #285189; 
+	height:50px;
+	
+	font-family: Arial-Regular;
+	font-size: 19px;
+	color: white;
+	vertical-align:center;
+	text-align: center;
+	margin: 0 auto;
+	border: 5px solid #285189;
+}
+.nav-button{
+	width:100%;
+	background-color: yellow; 
+	height:auto;
+}
+.nav-preview h1{
+    margin: 0px 325px;
+}
+h1{
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 40px;
+	color:#ffffff;
+}
+h2{
+	font-size: 30px;
+	color:#ffffff;
+}
+h3{
+	color:#ffffff;
+}
+
+/*-------------------------Register/Login/Logout-----------------*/
+.nav-register{
+	width:100%;
+	background-color: green;
+	/*background: url('../images/entrepreneurship.png') no-repeat center;*/
+	height:auto;
+
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	border: 5px solid #285189;
+}
+.nav-register .haha{
+		margin: 0 auto;
+		font-weight: normal;
+		margin-top: 65px;
+}
+
+/*responsive*/
+@media screen and (max-width: 1250px){
+.nav-register .haha{
+margin-top: 0px;
+}
+}
+/*responsive button*/
+@media screen and (max-width: 550px){
+	 .nav-register {
+	width:100%;
+	background-color: green;
+	/*background: url('../images/entrepreneurship.png') no-repeat center;*/
+	height:auto;
+
+}
+	 .nav-register .haha{
+margin-top:0px;
+}
+}
+.nav-aboveslider{
+	width:100%;
+	background: url('../images/entrepreneurship.png') no-repeat center;
+	height:auto;
+	
+	font-family: Lato-Regular;
+	font-size: 32px;
+	color: #fff;
+	vertical-align: text-bottom;
+	text-align: center;
+	margin: 0 auto;
+	border: 5px solid #285189;
+}
+.nav-aboveslider h1{
+	 color: yellow;
+}
+/*responsive*/
+@media screen and (max-width: 1050px){
+.nav-aboveslider h1{
+	  margin-top: 30px;
+}
+}
+
+/*-------------------------BELOW SLIDER-----------------*/
+.nav-belowslider{
+	width:100%;
+	/*background-color: gray;*/
+	background: url('../Pages/home/abovefooter3.png') no-repeat center;
+	height:auto;
+	border: 5px solid #285189;
+}
+.img{
+	width: 318px;
+	height: 168px;
+}
+
+/*-------------------------BLOG SECTIONS-----------------*/
+
+.nav-blog{
+	width:100%;
+	background: url('../view13_article6.png') no-repeat center;
+	height:auto;
+
+		
+	font-family: Lato-Regular;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	border: 5px solid #285189;
+}
+
+/*-------------------------ABOVE FOOTER-----------------*/
+.nav-abovefooter{
+	width:100%;
+	background: url('../Pages/home/abovefooter.png') no-repeat center;
+	height:auto;
+}		   
+
+
+/*-------------------------Shadow behind text-----------------*/
+#element1{
+	position: relative;
+	z-index:1;
+	width:350px;
+	height:200px;
+	text-align:left;
+	background-color:#000;
+	border:#F90 3px solid;
+	filter alpha(opacity=50);
+	-moz-opacity:.50;
+	opacity:.50;
+}
+
+#content1{
+	position:relative;
+	z-index:2;
+	top: -220px;
+	width:300px;
+	color:#FFF;
+	text-align:left;
+	margin:34px;
+	margin-bottom:-240px;
+}
+
+
+
+

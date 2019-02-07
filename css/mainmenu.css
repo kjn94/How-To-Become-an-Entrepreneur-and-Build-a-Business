@@ -1,0 +1,213 @@
+/*-------NEW MENU-------*/
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+ul.a {
+     list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+li.a{
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+li a.a{
+  display: block;
+  min-width: 40px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background-color: #4c66ff;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+li.footer{
+  display: inline-block;
+  float: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+li a.footer{
+  display: block;
+  min-width: 140px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+
+  color: #fff;
+  background-color: #2f3036;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+li{
+  display: inline-block;
+  float: left;
+  margin-right: -30px;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+/*style for menu links*/
+li a{
+  display: block;
+  min-width: 140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background-color: #2f3036;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+
+/*hover for top level links*/
+li:hover a{
+  background-color: #19c589;
+}
+
+/* style for dropdown links */
+li:hover ul li a{
+  background: #f3f3f3;
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+
+/* hover for dropdown links */
+li:hover ul li a:hover{
+  background: #19c589;
+  color: #fff;
+}
+
+/* hode dropdown links  */
+li ul{
+  display: none;
+}
+
+/* dropdown vertical */
+li ul li{
+  display: block;
+  float: none;
+}
+
+/*  */
+li ul li a{
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+
+/* display dropdown on hover */
+ul li a:hover + .hidden, .hidden:hover{
+display: block;
+}
+
+
+/*hide checkbox*/
+input[type=checkbox]{
+  display: none;
+}
+
+/*show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+  display: block;
+}
+
+.show-menu{
+  text-decoration: none;
+  color: #fff;
+  background-color: #19c589;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+
+/*responsive*/
+@media screen and (max-width: 1250px){
+  /*make d*/
+  ul{
+    position: static;
+    display: none;
+  }
+  li{
+    margin-bottom: 1px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  ul li, li a{
+    width: 100%;
+  }
+
+  .show-menu{
+    display: block;
+  }
+}
+
+
+/*----Social Media Icons----------*/
+nav ul{
+	width:100%;
+	height: 60px;
+		border: 5px solid #285189;
+		background-color: blue;
+}
+nav ul .logoNew{
+	margin:5px;
+	float:left;
+	width:170px;
+	height:50px;
+	background: url('../SecretAcademySmall.png') no-repeat center;
+}
+
+.ig{
+  margin:5px;
+  display: inline-block;
+  width:40px;
+  height:40px;
+  background: url('../igdone.png') no-repeat center;
+}
+nav ul .ig:hover{
+  background-color:#0e4bef;
+}
+nav ul .facebook{
+  margin:5px;
+  display: inline-block;
+  width:40px;
+  height:40px;
+  background: url('../face.png') no-repeat center;
+}
+nav ul .facebook:hover{
+  background-color:#0e4bef;
+}
+nav ul .youtube{
+  margin:5px;
+  display: inline-block;
+  width:40px;
+  height:40px;
+  background: url('../youtubedone.png') no-repeat center;
+}
+nav ul .youtube:hover{
+  background-color:#0e4bef;
+}
+nav ul .twitter{
+  margin:5px;
+  display: inline-block;
+  width:40px;
+  height:40px;
+  background: url('../twitterdone.png') no-repeat center;
+}
+nav ul .twitter:hover{
+  background-color:#0e4bef;
+}
